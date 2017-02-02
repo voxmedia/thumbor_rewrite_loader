@@ -2,14 +2,14 @@
 An HTTP loader which rewrites matches from a list with a single canonical domain.
 
 
-### You must define the following config variables in your thumbor.conf
+##### You must define the following config variables in your thumbor.conf
 `REWRITE_LOADER_HOST_PATTERNS`, A list of regexs
 `REWRITE_LOADER_CANONICAL_HOST`, A string
 
-### You must also enable the loader in your thumbor.conf
+##### You must also enable the loader in your thumbor.conf
 `LOADER = 'thumbor.loaders.thumbor_rewrite_loader'`
 
-### Example
+##### Example
 ```
 LOADER = 'thumbor.loaders.thumbor_rewrite_loader'
 REWRITE_CANONICAL_HOST = 'avarnish.cache.com'
