@@ -3,7 +3,7 @@ An HTTP loader which rewrites matches from a list with a single canonical domain
 
 
 ##### Install
-`pip install git+git://github.com/voxmedia/thumbor_rewrite_loader.git@v0.9.0`
+`pip install git+git://github.com/voxmedia/thumbor_rewrite_loader.git`
 
 ##### Develop / Install locally
 `git clone git@github.com:voxmedia/thumbor_rewrite_loader.git`
