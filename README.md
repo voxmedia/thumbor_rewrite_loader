@@ -1,16 +1,23 @@
 # thumbor_rewrite_loader
 An HTTP loader which rewrites matches from a list with a single canonical domain.
 
+
 ##### Install
 `pip install git+git://github.com/voxmedia/thumbor_rewrite_loader.git@v0.9.0`
+
+##### Develop / Install locally
+`git clone git@github.com:voxmedia/thumbor_rewrite_loader.git`
+`cd thumbor_rewrite_loader && pip install -e .`
 
 
 ##### You must define the following config variables in your thumbor.conf
 `REWRITE_LOADER_HOST_PATTERNS`, A list of regexs
 `REWRITE_LOADER_CANONICAL_HOST`, A string
 
+
 ##### You must also enable the loader in your thumbor.conf
 `LOADER = 'thumbor.loaders.thumbor_rewrite_loader'`
+
 
 ##### Example
 ```
