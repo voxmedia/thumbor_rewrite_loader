@@ -21,4 +21,4 @@ Then the loader will rewrite the request to the original image `http://cachedby.
 
 
 ###### Authors
-Jason Ormand [@okor](https://twitter.com/okor)@okor
+Jason Ormand [@okor](https://twitter.com/okor)
