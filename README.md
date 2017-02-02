@@ -10,9 +10,11 @@ An HTTP loader which rewrites matches from a list with a single canonical domain
 `LOADER = 'thumbor.loaders.thumbor_rewrite_loader'`
 
 ### Example
+```
 LOADER = 'thumbor.loaders.thumbor_rewrite_loader'
 REWRITE_CANONICAL_HOST = 'avarnish.cache.com'
 REWRITE_HOST_PATTERNS = ['cachedby.avarnishcache.com', 'cachedby.avarnishcache.com']
+```
 
 In the above example, if a request is made to thumbor for: `http://youthumbor.com/unsafe/100x100/http://cachedby.avarnishcache.com/dog.jpg`
 Then the loader will rewrite the request to the original image `http://cachedby.avarnishcache.com/dog.jpg` to instead load from `http://avarnish.cache.com/dog.jpg`
