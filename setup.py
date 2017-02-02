@@ -17,5 +17,5 @@ setup(
       'License :: OSI Approved :: BSD License',
       'Programming Language :: Python :: 2.7',
   ],
-  requires=['thumbor>=5.2']
+  requires='thumbor>=5.2'
 )
