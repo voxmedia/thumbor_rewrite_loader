@@ -1,6 +1,11 @@
 # thumbor_rewrite_loader
 An HTTP loader which rewrites matches from a list with a single canonical domain. Not production ready, not tested, so please wait for a stable 1.0.0 release.
 
+##### Concept and Purpose
+We wanted a way to load origin images via a local/private cache. We happen to be using Varnish to do that. Varnish has static backend definitions so we can't (and don't care to) cache images from third party origins.
+
+This came about partially because during high traffic spikes right as some content was being published, our front end would generate a lot of differently sized images for the same original image. In addition to just having a lot of clients requesting uncached image variants. This thundering herd scenario would sometimes max out our request rate limit to S3. By using Varnish to proxy these origin image requests they are collapsed to a single request and cached locally. Solving the rate limit issues and keeping the origin image around for what is a high probability of further variant requests in the near term.
+
 
 ##### Install
 `pip install git+git://github.com/voxmedia/thumbor_rewrite_loader.git@0.9.1`
@@ -32,4 +37,10 @@ Then the loader will rewrite the request to the original image `http://cachedby.
 
 
 ###### Authors
-Jason Ormand [@okor](https://twitter.com/okor)
+Jason Ormand [@okor](https://github.com/okor)
+
+###### Functionality ported from private plugin created by the following authors
+- Carmen Sarlo [@csarlo](https://github.com/csarlo)
+- Clif Reeder [@clifff](https://github.com/clifff)
+- Adri [@amplifi](https://github.com/amplifi)
+- Pablo Mercado [@odacrem](https://github.com/odacrem)
