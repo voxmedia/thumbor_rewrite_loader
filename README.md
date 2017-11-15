@@ -28,8 +28,8 @@ Where `0.9.1` is the release/tag. See releases for the latest version or optiona
 ##### Example
 ```
 LOADER = 'thumbor_rewrite_loader'
-REWRITE_CANONICAL_HOST = 'avarnish.cache.com'
-REWRITE_HOST_PATTERNS = ['cachedby.avarnishcache.com', 'cachedby.avarnishcache.com']
+REWRITE_LOADER_CANONICAL_HOST = 'avarnish.cache.com'
+REWRITE_LOADER_HOST_PATTERNS = ['cachedby.avarnishcache.com', 'cachedby.avarnishcache.com']
 ```
 
 In the above example, if a request is made to thumbor for: `http://youthumbor.com/unsafe/100x100/http://cachedby.avarnishcache.com/dog.jpg`
