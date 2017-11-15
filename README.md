@@ -22,12 +22,12 @@ Where `0.9.1` is the release/tag. See releases for the latest version or optiona
 
 
 ##### You must also enable the loader in your thumbor.conf
-`LOADER = 'thumbor.loaders.thumbor_rewrite_loader'`
+`LOADER = 'thumbor_rewrite_loader'`
 
 
 ##### Example
 ```
-LOADER = 'thumbor.loaders.thumbor_rewrite_loader'
+LOADER = 'thumbor_rewrite_loader'
 REWRITE_CANONICAL_HOST = 'avarnish.cache.com'
 REWRITE_HOST_PATTERNS = ['cachedby.avarnishcache.com', 'cachedby.avarnishcache.com']
 ```
