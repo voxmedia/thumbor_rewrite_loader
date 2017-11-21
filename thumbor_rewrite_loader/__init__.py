@@ -30,7 +30,7 @@ def load(context, url, callback):
     if context.config.REWRITE_LOADER_HOST_PATTERNS:
       for pattern in context.config.REWRITE_LOADER_HOST_PATTERNS:
         if re.search(pattern, url):
-          url = re.sub(pattern, REWRITE_LOADER_CANONICAL_HOST, url, 1)
+          url = re.sub(pattern, context.config.REWRITE_LOADER_CANONICAL_HOST, url, 1)
           break
 
     return http_loader.load_sync(context, url, callback, normalize_url_func=_normalize_url)

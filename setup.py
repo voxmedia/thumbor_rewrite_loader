@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
   name = 'thumbor_rewrite_loader',
-  version = '1.0.2',
+  version = '1.0.3',
   description = 'Thumbor HTTP loader which rewrites matches from a list with a single canonical domain.',
   author = 'Jason Ormand',
   author_email = 'jason.ormand@voxmedia.com',
